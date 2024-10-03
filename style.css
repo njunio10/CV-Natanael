@@ -137,6 +137,35 @@ body {
     font-weight: 300;
 }
 
+.contact_info.skills h5 {
+    /* Cor  */
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em; /* Aumente este valor para aumentar o tamanho da fonte */
+}
+
+.contact_info.skills ul {
+    list-style: none; /* Remove o estilo padrão da lista */
+    padding-left: 0; /* Remove o espaçamento padrão à esquerda */
+}
+
+.contact_info.skills li {
+    position: relative; /* Para posicionar a bolinha personalizada */
+    padding-left: 20px; /* Adiciona espaço para a bolinha */
+}
+
+.contact_info.skills li::before {
+    content: ''; /* Cria um elemento vazio */
+    position: absolute; /* Permite posicionar a bolinha */
+    left: 0; /* Alinha à esquerda */
+    top: 50%; /* Centraliza verticalmente em relação ao texto */
+    transform: translateY(-50%); /* Ajusta a posição vertical da bolinha */
+    width: 10px; /* Largura da bolinha */
+    height: 10px; /* Altura da bolinha */
+    border-radius: 50%; /* Torna a forma redonda */
+    background-color: #3ef7ed; /* Define a cor da bolinha (exemplo: vermelho) */
+}
+
 .contact_info.language .percent {
     position: relative;
     width: 100%;
